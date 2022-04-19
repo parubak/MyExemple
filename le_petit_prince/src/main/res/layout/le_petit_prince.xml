@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearL"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        >
+
+        <Button
+            android:id="@+id/button_morning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_bright"
+            android:onClick="btnMorningClick"
+            android:text="@string/button_morning"
+            android:textColor="@android:color/background_light"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/button_Day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_bright"
+            android:onClick="btnDayClick"
+            android:text="@string/button_day"
+            android:textColor="@android:color/background_light"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/button_Evening"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_bright"
+            android:onClick="btnEveningClick"
+            android:text="@string/button_evening"
+            android:textColor="@android:color/background_light"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/button_Night"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/holo_blue_bright"
+            android:onClick="btnNightClick"
+            android:text="@string/button_night"
+            android:textColor="@android:color/background_light"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearL">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutMorning"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/butPrinse"
+                android:layout_width="112dp"
+                android:layout_height="200dp"
+                android:layout_marginStart="128dp"
+                android:layout_marginBottom="384dp"
+                android:background="@android:color/transparent"
+                android:onClick="onPrinceClick"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/butPlanet"
+                android:layout_width="164dp"
+                android:layout_height="144dp"
+                android:layout_marginStart="105dp"
+                android:layout_marginEnd="124dp"
+                android:layout_marginBottom="215dp"
+                android:background="@android:color/transparent"
+                android:onClick="onPlanetClick"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/butVolcano"
+                android:layout_width="95dp"
+                android:layout_height="97dp"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="336dp"
+                android:background="@android:color/transparent"
+                android:onClick="onVolcanoClick"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <Button
+                android:id="@+id/butBreakfast"
+                android:layout_width="88dp"
+                android:layout_height="103dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="98dp"
+                android:background="@android:color/transparent"
+                android:onClick="onBreakfastClick"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Button
+                android:id="@+id/butRose"
+                android:layout_width="79dp"
+                android:layout_height="105dp"
+                android:layout_marginEnd="17dp"
+                android:layout_marginBottom="118dp"
+                android:background="@android:color/transparent"
+                android:onClick="onRoseClick"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageMorning"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:visibility="visible"
+                app:srcCompat="@drawable/morning" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageView
+            android:id="@+id/imageDay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/day" />
+
+        <ImageView
+            android:id="@+id/imageEvening"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/evening" />
+
+        <ImageView
+            android:id="@+id/imageNight"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            app:srcCompat="@drawable/night" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

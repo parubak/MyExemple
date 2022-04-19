@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Le Petit Prince</string>
+    <string name="Ravno">=</string>
+    <string name="Exit">Закрыть</string>
+    <string name="button_morning">Утро</string>
+    <string name="button_day">День</string>
+    <string name="button_evening">Вечер</string>
+    <string name="button_night">Ночь</string>
+
+
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<alpha xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromAlpha="0.0"
+    android:toAlpha="1.0"
+    android:duration="6000">
+    <!--Атрибуты fromAlpha и toAlpha задают начало и конец ани-
+    мации выцветания, им присваиваются значения от 0.0 (полная
+    прозрачность) до 1.0 (полная непрозрачность) и duration (продол-
+    жительность) — время анимации в миллисекундах.-->
+
+   <!-- AlphaAnimation (анимация прозрачности)
+    ScaleAnimation (анимация масштабиро-вания)
+    TranslateAnimation (анимация перемещения )
+    res/anim.-->
+
+
+</alpha>
+
+
